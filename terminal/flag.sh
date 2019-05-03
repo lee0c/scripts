@@ -5,7 +5,7 @@ or="\e[33m"
 ye="\e[93m"
 gr="\e[32m"
 bl="\e[34m"
-pu="\e[35m"
+pu="\e[95m"
 # Neutral color & flag pole color 
 n="\e[39m"
 o="\e[37m"
