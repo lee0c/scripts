@@ -8,6 +8,20 @@
         "keybindings" : 
         [
             {
+                "command" : "copy",
+                "keys" :
+                [
+                    "ctrl+shift+c"
+                ]
+            },
+            {
+                "command" : "paste",
+                "keys" : 
+                [
+                    "ctrl+shift+p"
+                ]
+            },
+            {
                 "command" : "closeTab",
                 "keys" : 
                 [
@@ -204,14 +218,15 @@
     "profiles" : 
     [
         {
-            "acrylicOpacity" : 0.5,
+            "acrylicOpacity" : 0.75,
             "closeOnExit" : true,
             "colorScheme" : "Horizon",
             "commandline" : "wsl.exe -d Ubuntu",
             "cursorColor" : "#E95378",
+            "cursorHeight" : 25,
             "cursorShape" : "vintage",
             "fontFace" : "Consolas",
-            "fontSize" : 10,
+            "fontSize" : 11,
             "guid" : "{2c4de342-38b7-51cf-b940-2309a097f518}",
             "historySize" : 9001,
             "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
@@ -228,6 +243,7 @@
             "colorScheme" : "Horizon",
             "commandline" : "powershell.exe",
             "cursorColor" : "#E95378",
+            "cursorHeight" : 25,
             "cursorShape" : "vintage",
             "fontFace" : "Consolas",
             "fontSize" : 10,
@@ -246,6 +262,7 @@
             "colorScheme" : "Horizon",
             "commandline" : "cmd.exe",
             "cursorColor" : "#E95378",
+            "cursorHeight" : 25,
             "cursorShape" : "vintage",
             "fontFace" : "Consolas",
             "fontSize" : 10,
@@ -402,8 +419,8 @@
             "cyan" : "#59E1E3",
             "foreground" : "#D5D8DA",
             "green" : "#29D398",
-            "purple" : "#F075B5",
             "name" : "Horizon",
+            "purple" : "#F075B5",
             "red" : "#E95678",
             "white" : "#D5D8DA",
             "yellow" : "#FAB795"
