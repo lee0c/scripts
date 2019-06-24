@@ -122,8 +122,14 @@ export DOCKER_HOST=tcp://localhost:2375
 # ssh-agent
 function ssa() {
     echo -en '\e[32m'
-	eval $(ssh-agent -s)
-	ssh-add ~/.ssh/id_rsa
+    ssa_pid=$(pgrep ssh-agent)
+    if [[ $ssa_pid ]]
+    then
+        echo "Agent pid $ssa_pid (already running)"
+    else
+    	eval $(ssh-agent -s)
+	fi
+    ssh-add ~/.ssh/id_rsa
 }
 
 # savedir & startup 
