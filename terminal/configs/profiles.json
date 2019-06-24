@@ -3,29 +3,22 @@
     {
         "alwaysShowTabs" : true,
         "defaultProfile" : "{2c4de342-38b7-51cf-b940-2309a097f518}",
-        "initialCols" : 120,
-        "initialRows" : 30,
+        "initialCols" : 160,
+        "initialRows" : 40,
         "keybindings" : 
         [
-            {
-                "command" : "copy",
-                "keys" :
-                [
-                    "ctrl+shift+c"
-                ]
-            },
-            {
-                "command" : "paste",
-                "keys" : 
-                [
-                    "ctrl+shift+p"
-                ]
-            },
             {
                 "command" : "closeTab",
                 "keys" : 
                 [
                     "ctrl+w"
+                ]
+            },
+            {
+                "command" : "copy",
+                "keys" : 
+                [
+                    "ctrl+shift+c"
                 ]
             },
             {
@@ -231,9 +224,66 @@
             "historySize" : 9001,
             "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
             "name" : "Ubuntu",
-            "padding" : "0, 0, 0, 0",
+            "padding" : "5, 2, 2, 2",
             "snapOnInput" : true,
-            "startingDirectory" : "%UBUNTUHOME%",
+            "startingDirectory" : "//wsl$/Ubuntu/home/lecattar",
+            "useAcrylic" : true
+        },
+        {
+            "acrylicOpacity" : 0.75,
+            "closeOnExit" : true,
+            "colorScheme" : "Horizon",
+            "commandline" : "wsl.exe -d Ubuntu",
+            "cursorColor" : "#E95378",
+            "cursorHeight" : 25,
+            "cursorShape" : "vintage",
+            "fontFace" : "Consolas",
+            "fontSize" : 15,
+            "guid" : "{a3ccbe13-069d-44c4-bc92-9ad19421e88a}",
+            "historySize" : 9001,
+            "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+            "name" : "Ubuntu (Presentation Mode)",
+            "padding" : "10, 5, 5, 5",
+            "snapOnInput" : true,
+            "startingDirectory" : "//wsl$/Ubuntu/home/lecattar",
+            "useAcrylic" : false
+        },
+        {
+            "acrylicOpacity" : 0.75,
+            "closeOnExit" : true,
+            "colorScheme" : "Horizon",
+            "commandline" : "wsl.exe -d Ubuntu",
+            "cursorColor" : "#E95378",
+            "cursorHeight" : 25,
+            "cursorShape" : "vintage",
+            "fontFace" : "OpenDyslexicMono",
+            "fontSize" : 12,
+            "guid" : "{9b17922c-58d0-443f-9790-a270190ee332}",
+            "historySize" : 9001,
+            "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+            "name" : "Ubuntu (Presentation Mode - OpenDyslexicMono)",
+            "padding" : "10, 5, 5, 5",
+            "snapOnInput" : true,
+            "startingDirectory" : "//wsl$/Ubuntu/home/lecattar",
+            "useAcrylic" : false
+        },
+        {
+            "acrylicOpacity" : 0.75,
+            "closeOnExit" : true,
+            "colorScheme" : "Horizon",
+            "commandline" : "cmd.exe",
+            "cursorColor" : "#E95378",
+            "cursorHeight" : 25,
+            "cursorShape" : "vintage",
+            "fontFace" : "Consolas",
+            "fontSize" : 10,
+            "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "historySize" : 9001,
+            "icon" : "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+            "name" : "cmd",
+            "padding" : "5, 2, 2, 2",
+            "snapOnInput" : true,
+            "startingDirectory" : "%USERPROFILE%",
             "useAcrylic" : true
         },
         {
@@ -251,26 +301,7 @@
             "historySize" : 9001,
             "icon" : "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
             "name" : "Windows PowerShell",
-            "padding" : "0, 0, 0, 0",
-            "snapOnInput" : true,
-            "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : true
-        },
-        {
-            "acrylicOpacity" : 0.75,
-            "closeOnExit" : true,
-            "colorScheme" : "Horizon",
-            "commandline" : "cmd.exe",
-            "cursorColor" : "#E95378",
-            "cursorHeight" : 25,
-            "cursorShape" : "vintage",
-            "fontFace" : "Consolas",
-            "fontSize" : 10,
-            "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "historySize" : 9001,
-            "icon" : "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-            "name" : "cmd",
-            "padding" : "0, 0, 0, 0",
+            "padding" : "5, 2, 2, 2",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",
             "useAcrylic" : true
