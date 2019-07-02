@@ -1,4 +1,4 @@
-cat > helm-rbac.yaml << EOF
+cat << EOF | kubectl apply -f -
 apiVersion: v1
 kind: ServiceAccount
 metadata:
@@ -19,7 +19,4 @@ subjects:
     namespace: kube-system
 EOF
 
-kubectl apply -f helm-rbac.yaml
-helm init --service-account tiller
-
-rm helm-rbac.yaml
+helm init --service-account tiller --upgrade
