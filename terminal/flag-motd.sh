@@ -27,7 +27,7 @@ else
 fi
 
 # Get last project directory
-lwd=$(basename $(cat $HOME/.lastdir))
+# lwd=$(basename $(cat $HOME/.lastdir))
 
 printf "%-b" "${o}O${n}"
 printf "\n"
@@ -56,7 +56,7 @@ printf "\n"
 
 printf "%-b" "   ${o}#\\\\${pu}@,${bl}\\\\&@@&,${gr}*@@\\\\&ogg,${ye}*&\\\\.${n}"
 printf "%5s" ""
-printf "Last project directory: %s" $lwd
+# printf "Last project directory: %s" $lwd
 printf "\n"
 
 printf "%-b" "   ${o}\\\\#${n}  ${pu}*\\\\&@gg,${bl}\\\\@@%&og\\\\,${gr}*@@%${n}"
