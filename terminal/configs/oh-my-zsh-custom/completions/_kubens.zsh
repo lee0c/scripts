@@ -1,1 +1,0 @@
-/home/lecattar/documents/tooling/kubectx/completion/kubens.zsh

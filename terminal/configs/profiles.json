@@ -2,7 +2,7 @@
     "globals" : 
     {
         "alwaysShowTabs" : true,
-        "defaultProfile" : "{2c4de342-38b7-51cf-b940-2309a097f518}",
+        "defaultProfile" : "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
         "initialCols" : 160,
         "initialRows" : 40,
         "keybindings" : 
@@ -12,13 +12,6 @@
                 "keys" : 
                 [
                     "ctrl+w"
-                ]
-            },
-            {
-                "command" : "copy",
-                "keys" : 
-                [
-                    "ctrl+shift+c"
                 ]
             },
             {
@@ -204,23 +197,61 @@
                 ]
             }
         ],
-        "requestedTheme" : "dark",
+        "requestedTheme" : "system",
         "showTabsInTitlebar" : true,
-        "showTerminalTitleInTitlebar" : true
+        "showTerminalTitleInTitlebar" : true,
+        "wordDelimiters" : " ./\\()\"'-:,.;<>~!@#$%^&*|+=[]{}~?\u2502"
     },
     "profiles" : 
     [
         {
+            "acrylicOpacity" : 0.5,
+            "background" : "#012456",
+            "closeOnExit" : true,
+            "colorScheme" : "Campbell",
+            "commandline" : "powershell.exe",
+            "cursorColor" : "#FFFFFF",
+            "cursorShape" : "bar",
+            "fontFace" : "Consolas",
+            "fontSize" : 10,
+            "guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+            "historySize" : 9001,
+            "icon" : "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
+            "name" : "Windows PowerShell",
+            "padding" : "0, 0, 0, 0",
+            "snapOnInput" : true,
+            "startingDirectory" : "%USERPROFILE%",
+            "useAcrylic" : false
+        },
+        {
             "acrylicOpacity" : 0.75,
             "closeOnExit" : true,
+            "colorScheme" : "Campbell",
+            "commandline" : "cmd.exe",
+            "cursorColor" : "#FFFFFF",
+            "cursorShape" : "bar",
+            "fontFace" : "Consolas",
+            "fontSize" : 10,
+            "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+            "historySize" : 9001,
+            "icon" : "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
+            "name" : "cmd",
+            "padding" : "0, 0, 0, 0",
+            "snapOnInput" : true,
+            "startingDirectory" : "%USERPROFILE%",
+            "useAcrylic" : true
+        },
+        {
+            "acrylicOpacity" : 0.5,
+            "closeOnExit" : true,
             "colorScheme" : "Horizon",
-            "commandline" : "wsl.exe -d Ubuntu",
+            "commandline" : "wsl.exe ~ -d Ubuntu-18.04",
             "cursorColor" : "#E95378",
             "cursorHeight" : 25,
             "cursorShape" : "vintage",
-            "fontFace" : "Consolas",
-            "fontSize" : 11,
-            "guid" : "{2c4de342-38b7-51cf-b940-2309a097f518}",
+            "fontFace" : "DejaVu Sans Mono for Powerline",
+            "fontSize" : 10,
+            "guid" : "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
             "historySize" : 9001,
             "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
             "name" : "Ubuntu",
@@ -230,14 +261,14 @@
             "useAcrylic" : true
         },
         {
-            "acrylicOpacity" : 0.75,
+            "acrylicOpacity" : 1.0,
             "closeOnExit" : true,
             "colorScheme" : "Horizon",
-            "commandline" : "wsl.exe -d Ubuntu",
+            "commandline" : "wsl.exe ~ -d Ubuntu-18.04",
             "cursorColor" : "#E95378",
             "cursorHeight" : 25,
             "cursorShape" : "vintage",
-            "fontFace" : "Consolas",
+            "fontFace" : "DejaVu Sans Mono for Powerline",
             "fontSize" : 15,
             "guid" : "{a3ccbe13-069d-44c4-bc92-9ad19421e88a}",
             "historySize" : 9001,
@@ -247,68 +278,31 @@
             "snapOnInput" : true,
             "startingDirectory" : "//wsl$/Ubuntu/home/lecattar",
             "useAcrylic" : false
-        },
-        {
-            "acrylicOpacity" : 0.75,
-            "closeOnExit" : true,
-            "colorScheme" : "Horizon",
-            "commandline" : "wsl.exe -d Ubuntu",
-            "cursorColor" : "#E95378",
-            "cursorHeight" : 25,
-            "cursorShape" : "vintage",
-            "fontFace" : "OpenDyslexicMono",
-            "fontSize" : 12,
-            "guid" : "{9b17922c-58d0-443f-9790-a270190ee332}",
-            "historySize" : 9001,
-            "icon" : "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-            "name" : "Ubuntu (Presentation Mode - OpenDyslexicMono)",
-            "padding" : "10, 5, 5, 5",
-            "snapOnInput" : true,
-            "startingDirectory" : "//wsl$/Ubuntu/home/lecattar",
-            "useAcrylic" : false
-        },
-        {
-            "acrylicOpacity" : 0.75,
-            "closeOnExit" : true,
-            "colorScheme" : "Horizon",
-            "commandline" : "cmd.exe",
-            "cursorColor" : "#E95378",
-            "cursorHeight" : 25,
-            "cursorShape" : "vintage",
-            "fontFace" : "Consolas",
-            "fontSize" : 10,
-            "guid" : "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-            "historySize" : 9001,
-            "icon" : "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-            "name" : "cmd",
-            "padding" : "5, 2, 2, 2",
-            "snapOnInput" : true,
-            "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : true
-        },
-        {
-            "acrylicOpacity" : 0.5,
-            "background" : "#012456",
-            "closeOnExit" : true,
-            "colorScheme" : "Horizon",
-            "commandline" : "powershell.exe",
-            "cursorColor" : "#E95378",
-            "cursorHeight" : 25,
-            "cursorShape" : "vintage",
-            "fontFace" : "Consolas",
-            "fontSize" : 10,
-            "guid" : "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-            "historySize" : 9001,
-            "icon" : "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
-            "name" : "Windows PowerShell",
-            "padding" : "5, 2, 2, 2",
-            "snapOnInput" : true,
-            "startingDirectory" : "%USERPROFILE%",
-            "useAcrylic" : true
         }
     ],
     "schemes" : 
     [
+        {
+            "background" : "#1C1E26",
+            "black" : "#2E303E",
+            "blue" : "#26BBD9",
+            "brightBlack" : "#232530",
+            "brightBlue" : "#3FC4DE",
+            "brightCyan" : "#25B0BC",
+            "brightGreen" : "#27D797",
+            "brightPurple" : "#B877DB",
+            "brightRed" : "#F43E5C",
+            "brightWhite" : "#FFFFFF",
+            "brightYellow" : "#FBE6BC",
+            "cyan" : "#59E1E3",
+            "foreground" : "#D5D8DA",
+            "green" : "#29D398",
+            "name" : "Horizon",
+            "purple" : "#F075B5",
+            "red" : "#E95678",
+            "white" : "#D5D8DA",
+            "yellow" : "#FAB795"
+        },
         {
             "background" : "#0C0C0C",
             "black" : "#0C0C0C",
@@ -322,7 +316,7 @@
             "brightWhite" : "#F2F2F2",
             "brightYellow" : "#F9F1A5",
             "cyan" : "#3A96DD",
-            "foreground" : "#F2F2F2",
+            "foreground" : "#CCCCCC",
             "green" : "#13A10E",
             "name" : "Campbell",
             "purple" : "#881798",
@@ -373,7 +367,7 @@
             "yellow" : "#C18301"
         },
         {
-            "background" : "#073642",
+            "background" : "#002B36",
             "black" : "#073642",
             "blue" : "#268BD2",
             "brightBlack" : "#002B36",
@@ -385,11 +379,11 @@
             "brightWhite" : "#FDF6E3",
             "brightYellow" : "#657B83",
             "cyan" : "#2AA198",
-            "foreground" : "#FDF6E3",
+            "foreground" : "#839496",
             "green" : "#859900",
             "name" : "Solarized Dark",
             "purple" : "#D33682",
-            "red" : "#D30102",
+            "red" : "#DC322F",
             "white" : "#EEE8D5",
             "yellow" : "#B58900"
         },
@@ -406,55 +400,13 @@
             "brightWhite" : "#FDF6E3",
             "brightYellow" : "#657B83",
             "cyan" : "#2AA198",
-            "foreground" : "#073642",
+            "foreground" : "#657B83",
             "green" : "#859900",
             "name" : "Solarized Light",
             "purple" : "#D33682",
-            "red" : "#D30102",
+            "red" : "#DC322F",
             "white" : "#EEE8D5",
             "yellow" : "#B58900"
-        },
-        {
-            "background" : "#FDF6E3",
-            "black" : "#073642",
-            "blue" : "#268BD2",
-            "brightBlack" : "#002B36",
-            "brightBlue" : "#839496",
-            "brightCyan" : "#93A1A1",
-            "brightGreen" : "#586E75",
-            "brightPurple" : "#6C71C4",
-            "brightRed" : "#CB4B16",
-            "brightWhite" : "#FDF6E3",
-            "brightYellow" : "#657B83",
-            "cyan" : "#2AA198",
-            "foreground" : "#073642",
-            "green" : "#859900",
-            "name" : "Solarized Light",
-            "purple" : "#D33682",
-            "red" : "#D30102",
-            "white" : "#EEE8D5",
-            "yellow" : "#B58900"
-        },
-        {
-            "background" : "#1C1E26",
-            "black" : "#2E303E",
-            "blue" : "#26BBD9",
-            "brightBlack" : "#232530",
-            "brightBlue" : "#3FC4DE",
-            "brightCyan" : "#25B0BC",
-            "brightGreen" : "#27D797",
-            "brightPurple" : "#B877DB",
-            "brightRed" : "#F43E5C",
-            "brightWhite" : "#FFFFFF",
-            "brightYellow" : "#FBE6BC",
-            "cyan" : "#59E1E3",
-            "foreground" : "#D5D8DA",
-            "green" : "#29D398",
-            "name" : "Horizon",
-            "purple" : "#F075B5",
-            "red" : "#E95678",
-            "white" : "#D5D8DA",
-            "yellow" : "#FAB795"
         }
     ]
 }

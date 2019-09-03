@@ -76,6 +76,8 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+export PATH=$PATH:/usr/local/go/bin
+
 # User configuration
 
 # kube ps1 mods
@@ -113,15 +115,22 @@ ssa() {
 	ssh-add ~/.ssh/id_rsa
 }
 
-# git configuration
-alias gtree="git log --graph --oneline --all"
+# color scripts for editing use
+alias showcolors="$HOME/documents/scripts/terminal/testcolor.sh; $HOME/documents/scripts/terminal/256-colors.sh"
 
 # "reload"
 reload() {
     source $HOME/.zshrc
 }
 
+# command aliases
+alias gtree="git log --graph --oneline --all"
+alias code="code ."
+
+# directory aliases
+alias sitecore="cd $HOME/documents/sitecore/Sitecore.HabitatHome.DevOps"
+
 # when sourced, clear term & reset prompt newline
 clear
 export PROMPT_NEWLINE=""
-$HOME/documents/scripts/terminal/flag-motd.sh
+$HOME/scripts/terminal/flag-motd.sh
