@@ -32,7 +32,7 @@ az aks create \
     --enable-vmss --enable-addons monitoring \
     --workspace-resource-id $MONITORING_WORKSPACE \
     --ssh-key-value "$HOME/.ssh/id_rsa.pub" \
-    --admin-username $(whoami) --kubernetes-version "1.14.3" \
+    --admin-username $(whoami) --kubernetes-version "1.14.6" \
     --query "{ name: name, resourceGroup: resourceGroup }"
 
 az aks get-credentials \
