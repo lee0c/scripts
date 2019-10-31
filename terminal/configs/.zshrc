@@ -76,7 +76,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:$HOME/.linkerd2/bin
+
+export DOCKER_HOST=tcp://localhost:2375
 
 # User configuration
 
@@ -116,12 +118,15 @@ ssa() {
 }
 
 # color scripts for editing use
-alias showcolors="$HOME/documents/scripts/terminal/testcolor.sh; $HOME/documents/scripts/terminal/256-colors.sh"
+alias showcolors="$HOME/scripts/terminal/testcolor.sh; $HOME/scripts/terminal/256-colors.sh"
 
 # "reload"
 reload() {
     source $HOME/.zshrc
 }
+
+# ssh aliases
+alias gyges="ssh irremeable@gyges.feralhosting.com"
 
 # command aliases
 alias gtree="git log --graph --oneline --all"
