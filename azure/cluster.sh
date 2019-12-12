@@ -28,7 +28,7 @@ fi
 
 az aks create \
     --name $1 \
-    --nodepool-name linux --node-count 1 --node-vm-size "Standard_DS3_v2" \
+    --nodepool-name linux --node-count 1 --node-vm-size "Standard_D2s_v3" \
     --enable-vmss --enable-addons monitoring \
     --workspace-resource-id $MONITORING_WORKSPACE \
     --ssh-key-value "$HOME/.ssh/id_rsa.pub" \
