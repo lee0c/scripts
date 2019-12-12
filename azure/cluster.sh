@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ "$#" -eq 0 ]]; then
-    echo "USAGE: ./cluster.sh [\$RG_NAME\] \$CLUSTER_NAME"
+    echo "USAGE: ./cluster.sh [\$RG_NAME] \$CLUSTER_NAME"
     exit 0
 fi
 
