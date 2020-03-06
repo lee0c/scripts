@@ -29,9 +29,14 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsof
 # Kubectl
 echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 
+# Git
+sudo add-apt-repository ppa:git-core/ppa
+
+# Update and install
 sudo apt-get update
 
 sudo apt-get install -y \
+    git \
     kubectl \
     azure-cli \
     azure-functions-core-tools
