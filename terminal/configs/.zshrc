@@ -78,8 +78,6 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH=$PATH:/usr/local/go/bin:$HOME/.linkerd2/bin
 
-export DOCKER_HOST=tcp://localhost:2375
-
 # User configuration
 
 # kube ps1 mods
@@ -125,15 +123,19 @@ reload() {
     source $HOME/.zshrc
 }
 
+# set browser vars
+export DISPLAY=:0
+export BROWSER=/c/Program\ Files\ \(x86\)/Microsoft/Edge\ Dev/Application/msedge.exe
+
 # ssh aliases
-alias gyges="ssh irremeable@gyges.feralhosting.com"
 
 # command aliases
 alias gtree="git log --graph --oneline --all"
 alias code="code ."
+alias kdump="kubectl get all --all-namespaces"
+alias sscat="cat $HOME/.ssh/id_rsa.pub"
 
 # directory aliases
-alias sitecore="cd $HOME/documents/sitecore/Sitecore.HabitatHome.DevOps"
 
 # when sourced, clear term & reset prompt newline
 clear
