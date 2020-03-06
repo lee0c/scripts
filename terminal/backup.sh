@@ -1,8 +1,11 @@
 #!/bin/bash
 
-if [[ -f $HOME/.bashrc ]]; then cp $HOME/.bashrc $HOME/scripts/terminal/configs; fi
-if [[ -f $HOME/.bash_aliases ]]; then cp $HOME/.bash_aliases $HOME/scripts/terminal/configs; fi
-if [[ -f $HOME/.zshrc ]]; then cp $HOME/.zshrc $HOME/scripts/terminal/configs; fi
+for file in .bashrc .bash_aliases .zshrc .gitconfig .vimrc
+do
+    if [[ -f $HOME/$file ]]
+    then cp $HOME/$file $HOME/scripts/terminal/configs
+    fi
+done
 
 cp -r $HOME/.oh-my-zsh/custom $HOME/scripts/terminal/configs/oh-my-zsh
 

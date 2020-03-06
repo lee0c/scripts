@@ -1,0 +1,11 @@
+[user]
+	email = lecattar@microsoft.com 
+	name = Lee Cattarin
+
+[core]
+	editor = vim
+	autocrlf = input
+
+[help]
+	autocorrect = 10
+
