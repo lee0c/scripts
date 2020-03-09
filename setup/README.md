@@ -15,4 +15,5 @@
 1. [`setup.sh`](./setup.sh) for major installations
 1. [`tooling.sh`](./tooling.sh) for tools in GH repositories
 1. [`unpack.sh`](../terminal/unpack.sh) to load in all backed-up terminal config files
+1. Don't forget to set up desktop shortcut (`shell:AppsFolder` to get to app)
 
