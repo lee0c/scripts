@@ -17,3 +17,11 @@
 1. [`unpack.sh`](../terminal/unpack.sh) to load in all backed-up terminal config files
 1. Don't forget to set up desktop shortcut (`shell:AppsFolder` to get to app)
 
+### User profile management
+
+If the user profile is not `lecattar`: in administrator cmd prompt
+
+```cmd
+CD C:\Users\
+MKLINK /J lecattar $actualProfile
+```
