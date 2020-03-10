@@ -1,0 +1,43 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.shell.linux": "/usr/bin/zsh",
+    "git.ignoreMissingGitWarning": true,
+    "workbench.colorTheme": "Horizon",
+    "workbench.iconTheme": "vs-nomo-dark",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "files.eol": "\n",
+    "files.insertFinalNewline": true,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
+    "terminal.integrated.fontSize": 13,
+    "window.zoomLevel": 0,
+    "editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.acceptSuggestionOnEnter": "off",
+	"editor.suggest.shareSuggestSelections": true,
+	"gitlens.views.repositories.location": "gitlens",
+	"gitlens.views.fileHistory.location": "gitlens",
+	"gitlens.views.lineHistory.location": "gitlens",
+	"gitlens.views.compare.location": "gitlens",
+	"gitlens.views.search.location": "gitlens",
+	"[json]": {
+		"editor.tabSize": 2
+	},
+	"markdownlint.customRules": [
+		"{docsmsft.docs-linting}/markdownlint-custom-rules/rules.js"
+	],
+	"markdownlint.config": {
+		"MD025": {
+			"front_matter_title": ""
+		}
+	},
+	"yaml.schemas": {
+		"file:///home/lecattar/.vscode-server/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
+	},
+	"cSpell.userWords": [
+		"Kubernetes"
+	],
+	"markdown-toc.depthFrom": 2
+}
