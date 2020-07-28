@@ -29,10 +29,10 @@ fi
 az aks create \
     --name $1 \
     --nodepool-name linux --node-count 1 --node-vm-size "Standard_D2s_v3" \
-    --enable-vmss --enable-addons monitoring \
+    --enable-addons monitoring \
     --workspace-resource-id $MONITORING_WORKSPACE \
     --ssh-key-value "$HOME/.ssh/id_rsa.pub" \
-    --admin-username $(whoami) --kubernetes-version "1.15.5" \
+    --admin-username $(whoami) --kubernetes-version "1.17.7" \
     --query "{ name: name, resourceGroup: resourceGroup }"
 
 az aks get-credentials \
