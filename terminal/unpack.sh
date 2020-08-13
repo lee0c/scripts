@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+if [[ -f /etc/wsl.conf ]]; then
+	echo "Using wsl.conf to set mount point for c drive. Restart the terminal"
+	cp $HOME/scripts/terminal/configs/wsl.conf /etc/wsl.conf
+	exit
+fi
 
 for file in .bashrc .bash_aliases .zshrc .gitconfig .vimrc
 do
@@ -8,5 +14,5 @@ done
 rm -rf $HOME/.oh-my-zsh/custom
 cp -r $HOME/scripts/terminal/configs/oh-my-zsh/custom $HOME/.oh-my-zsh
 
-cp $HOME/scripts/terminal/configs/winterm.json /mnt/c/Users/lecattar.LRCHOME/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/profiles.json
-cp $HOME/scripts/terminal/configs/vscode_user.json /mnt/c/Users/lecattar.LRCHOME/AppData/Roaming/Code/User/settings.json
+cp $HOME/scripts/terminal/configs/winterm.json /c/Users/lecattar*/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json
+cp $HOME/scripts/terminal/configs/vscode_user.json /c/Users/lecattar*/AppData/Roaming/Code/User/settings.json
