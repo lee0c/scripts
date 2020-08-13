@@ -3,7 +3,7 @@
 
 	"defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
 
-    // Launch Settings
+  	// Launch Settings
 	"initialCols": 160,
 	"initialRows": 40,
     "launchMode": "default",
@@ -26,170 +26,6 @@
     "rowsToScroll": "system",
     "snapToGridOnResize": true,
 
-	"keybindings": [
-		{
-			"command": "closeTab",
-			"keys": [
-				"ctrl+w"
-			]
-		},
-		{
-			"command": "newTab",
-			"keys": [
-				"ctrl+t"
-			]
-		},
-		{
-			"command": "newTabProfile0",
-			"keys": [
-				"ctrl+shift+1"
-			]
-		},
-		{
-			"command": "newTabProfile1",
-			"keys": [
-				"ctrl+shift+2"
-			]
-		},
-		{
-			"command": "newTabProfile2",
-			"keys": [
-				"ctrl+shift+3"
-			]
-		},
-		{
-			"command": "newTabProfile3",
-			"keys": [
-				"ctrl+shift+4"
-			]
-		},
-		{
-			"command": "newTabProfile4",
-			"keys": [
-				"ctrl+shift+5"
-			]
-		},
-		{
-			"command": "newTabProfile5",
-			"keys": [
-				"ctrl+shift+6"
-			]
-		},
-		{
-			"command": "newTabProfile6",
-			"keys": [
-				"ctrl+shift+7"
-			]
-		},
-		{
-			"command": "newTabProfile7",
-			"keys": [
-				"ctrl+shift+8"
-			]
-		},
-		{
-			"command": "newTabProfile8",
-			"keys": [
-				"ctrl+shift+9"
-			]
-		},
-		{
-			"command": "nextTab",
-			"keys": [
-				"ctrl+tab"
-			]
-		},
-		{
-			"command": "openSettings",
-			"keys": [
-				"ctrl+,"
-			]
-		},
-		{
-			"command": "prevTab",
-			"keys": [
-				"ctrl+shift+tab"
-			]
-		},
-		{
-			"command": "scrollDown",
-			"keys": [
-				"ctrl+shift+down"
-			]
-		},
-		{
-			"command": "scrollDownPage",
-			"keys": [
-				"ctrl+shift+pgdn"
-			]
-		},
-		{
-			"command": "scrollUp",
-			"keys": [
-				"ctrl+shift+up"
-			]
-		},
-		{
-			"command": "scrollUpPage",
-			"keys": [
-				"ctrl+shift+pgup"
-			]
-		},
-		{
-			"command": "switchToTab0",
-			"keys": [
-				"alt+1"
-			]
-		},
-		{
-			"command": "switchToTab1",
-			"keys": [
-				"alt+2"
-			]
-		},
-		{
-			"command": "switchToTab2",
-			"keys": [
-				"alt+3"
-			]
-		},
-		{
-			"command": "switchToTab3",
-			"keys": [
-				"alt+4"
-			]
-		},
-		{
-			"command": "switchToTab4",
-			"keys": [
-				"alt+5"
-			]
-		},
-		{
-			"command": "switchToTab5",
-			"keys": [
-				"alt+6"
-			]
-		},
-		{
-			"command": "switchToTab6",
-			"keys": [
-				"alt+7"
-			]
-		},
-		{
-			"command": "switchToTab7",
-			"keys": [
-				"alt+8"
-			]
-		},
-		{
-			"command": "switchToTab8",
-			"keys": [
-				"alt+9"
-			]
-		}
-	],
 	"profiles": 
 	{
 		"defaults":
@@ -209,21 +45,12 @@
 			{
 				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
 				"name": "Windows PowerShell",
-
-				"commandline": "powershell.exe",
-				"icon": "ms-appx:///ProfileIcons/{61c54bbd-c2c6-5271-96e7-009a87ff44bf}.png",
-				"snapOnInput": true,
-				"startingDirectory": "%USERPROFILE%"
+				"commandline": "powershell.exe"
 			},
 			{
 				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
 				"name": "cmd",
-
-				"acrylicOpacity": 0.75,
-				"icon": "ms-appx:///ProfileIcons/{0caa0dad-35be-5f56-a8ff-afceeeaa6101}.png",
-				"snapOnInput": true,
-				"startingDirectory": "%USERPROFILE%",
-				"useAcrylic": true
+				"commandline": "cmd.exe"
 			},
 			{
 				"guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
@@ -231,7 +58,6 @@
 
 				"commandline": "wsl.exe ~ -d Ubuntu-18.04",
 				"icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
-				"snapOnInput": true,
 				"startingDirectory": "//wsl$/Ubuntu/home/lecattar"
 			},
 			{
@@ -240,11 +66,10 @@
 
 				"backgroundImage": null,
 				"colorScheme": "Horizon",
-				"commandline": "wsl.exe ~ -d Ubuntu-18.04",
+				"source": "Windows.Terminal.Wsl",
 				"fontSize": 15,
 				"icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
 				"padding": "10, 5, 5, 5",
-				"snapOnInput": true,
 				"startingDirectory": "//wsl$/Ubuntu/home/lecattar"
 			},
 			{
@@ -252,18 +77,6 @@
 				"hidden": true,
 				"name": "Azure Cloud Shell",
 				"source": "Windows.Terminal.Azure"
-			},
-			{
-				"guid": "{d8afdc0e-a636-5b68-89dd-50a9d0b54349}",
-				"hidden": true,
-				"name": "docker-desktop-data",
-				"source": "Windows.Terminal.Wsl"
-			},
-			{
-				"guid": "{570fcb8d-792c-5ac7-ab1f-5cfb2cdfdb99}",
-				"hidden": true,
-				"name": "docker-desktop",
-				"source": "Windows.Terminal.Wsl"
 			}
 		]
 	},
