@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 if [[ "$#" -eq 0 ]]; then
     echo "USAGE: ./cluster.sh [\$RG_NAME] \$CLUSTER_NAME"

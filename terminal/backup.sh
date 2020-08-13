@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 for file in .bashrc .bash_aliases .zshrc .gitconfig .vimrc
 do

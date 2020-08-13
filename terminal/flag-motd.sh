@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 re="\e[31m"
 or="\e[33m"

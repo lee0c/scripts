@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 cat > example.txt << EOF
 This is an example of a multiline cat
