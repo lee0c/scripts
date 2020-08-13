@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-if [[ -f /etc/wsl.conf ]]; then
-	echo "Using wsl.conf to set mount point for c drive. Restart the terminal"
+if [[ ! -f /etc/wsl.conf ]]; then
+	echo "Using wsl.conf to set mount point for c drive. Restart the terminal before attempting to rerun this script."
 	cp $HOME/scripts/terminal/configs/wsl.conf /etc/wsl.conf
 	exit
 fi

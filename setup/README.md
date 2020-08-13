@@ -13,6 +13,7 @@
 1. [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 1. [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal-preview/9n0dx20hk701)
 1. [VSCode](https://code.visualstudio.com/Download)
+	1. Horizon Theme
 1. [Teams](https://teams.microsoft.com/downloads)
 1. [Powerline fonts](https://github.com/powerline/fonts)
 1. [Office](portal.office.com)
