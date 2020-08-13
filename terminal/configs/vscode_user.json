@@ -12,9 +12,7 @@
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "terminal.integrated.fontFamily": "DejaVu Sans Mono for Powerline",
     "terminal.integrated.fontSize": 13,
-    "window.zoomLevel": 0,
-    "editor.insertSpaces": false,
-	"editor.detectIndentation": false,
+    "window.zoomLevel": 1,
 	"editor.acceptSuggestionOnEnter": "off",
 	"editor.suggest.shareSuggestSelections": true,
 	"gitlens.views.repositories.location": "gitlens",
@@ -31,13 +29,18 @@
 	"markdownlint.config": {
 		"MD025": {
 			"front_matter_title": ""
-		}
+		},
+		"MD028": false
 	},
 	"yaml.schemas": {
-		"file:///home/lecattar/.vscode-server/extensions/docsmsft.docs-yaml-0.2.4/schemas/toc.schema.json": "/toc\\.yml/i"
+		"file:///toc.schema.json": "/toc\\.yml/i"
 	},
 	"cSpell.userWords": [
-		"Kubernetes"
+		"Kubernetes",
+		"jsonpath",
+		"kubectl",
+		"lecattar",
+		"pytest"
 	],
 	"markdown-toc.depthFrom": 2
 }
