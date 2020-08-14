@@ -1,7 +1,7 @@
 {
 	"$schema": "https://aka.ms/terminal-profiles-schema",
 
-	"defaultProfile": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+	"defaultProfile": "{2c4de342-38b7-51cf-b940-2309a097f518}",
 
   	// Launch Settings
 	"initialCols": 160,
@@ -30,7 +30,7 @@
 	{
 		"defaults":
 		{
-			"backgroundImage": "C:/Users/lecattar/OneDrive/wallpapers/space.gif",
+			"backgroundImage": "C:/Users/lecattar.LRCHOME/OneDrive/wallpapers/space.gif",
 			"backgroundImageOpacity": 0.7,
 			"backgroundImageStretchMode": "uniformToFill",
 			"colorScheme": "Horizon",
@@ -44,32 +44,27 @@
 		"list": [
 			{
 				"guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
-				"name": "Windows PowerShell",
-				"commandline": "powershell.exe"
+				"name": "Windows PowerShell"
 			},
 			{
 				"guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
-				"name": "cmd",
-				"commandline": "cmd.exe"
+				"name": "cmd"
 			},
 			{
-				"guid": "{c6eaf9f4-32a7-5fdc-b5cf-066e8a4b1e40}",
+			    "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
 				"name": "Ubuntu",
-
-				"commandline": "wsl.exe ~ -d Ubuntu-18.04",
 				"icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
+				"source": "Windows.Terminal.Wsl",
 				"startingDirectory": "//wsl$/Ubuntu/home/lecattar"
 			},
 			{
 				"guid": "{a3ccbe13-069d-44c4-bc92-9ad19421e88a}",
 				"name": "Ubuntu (Presentation Mode)",
-
 				"backgroundImage": null,
-				"colorScheme": "Horizon",
-				"source": "Windows.Terminal.Wsl",
 				"fontSize": 15,
 				"icon": "ms-appx:///ProfileIcons/{9acb9455-ca41-5af7-950f-6bca1bc9722f}.png",
 				"padding": "10, 5, 5, 5",
+				"source": "Windows.Terminal.Wsl",
 				"startingDirectory": "//wsl$/Ubuntu/home/lecattar"
 			},
 			{
