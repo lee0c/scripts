@@ -20,6 +20,9 @@ curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
 # Kubernetes signing key
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
+# HashiCorp signing key
+curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
+
 ## Sources
 
 RELEASE=$(lsb_release -cs)
@@ -34,13 +37,17 @@ echo "deb https://apt.kubernetes.io/ kubernetes-$RELEASE main" | sudo tee -a /et
 # Git
 sudo add-apt-repository ppa:git-core/ppa
 
+# HashiCorp
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+
 # Update and install, then upgrade
 sudo apt update
 
 sudo apt install -y \
     git \
     kubectl \
-    azure-cli 
+    azure-cli \
+    terraform
     
 # Binaries
 curl -sL https://run.linkerd.io/install | sh
