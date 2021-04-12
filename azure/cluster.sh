@@ -26,13 +26,15 @@ if [[ -z "$MONITORING_WORKSPACE" ]]; then
         --query "id" --output tsv)
 fi
 
+AKS_VERSION=$(az aks get-versions -l westus2 --query 'orchestrators[-1].orchestratorVersion' -o tsv)
+
 az aks create \
     --name $1 \
     --nodepool-name linux --node-count 1 --node-vm-size "Standard_D2s_v3" \
     --enable-addons monitoring \
     --workspace-resource-id $MONITORING_WORKSPACE \
     --ssh-key-value "$HOME/.ssh/id_rsa.pub" \
-    --admin-username $(whoami) --kubernetes-version "1.17.7" \
+    --admin-username $(whoami) --kubernetes-version "$AKS_VERSION" \
     --query "{ name: name, resourceGroup: resourceGroup }"
 
 az aks get-credentials \
