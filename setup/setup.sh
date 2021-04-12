@@ -18,7 +18,10 @@ curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
     sudo tee /etc/apt/trusted.gpg.d/microsoft.asc.gpg > /dev/null
 
 # Kubernetes signing key
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+# prior command, leaving in for ref for a bit
+# curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
 
 # HashiCorp signing key
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
@@ -38,7 +41,7 @@ echo "deb https://apt.kubernetes.io/ kubernetes-$RELEASE main" | sudo tee -a /et
 sudo add-apt-repository ppa:git-core/ppa
 
 # HashiCorp
-sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $RELEASE main"
 
 # Update and install, then upgrade
 sudo apt update
