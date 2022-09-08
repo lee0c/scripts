@@ -21,8 +21,8 @@
 
 1. Set up a private key
 1. [`zsh.sh`](./zsh.sh) to switch to zsh and oh-my-zsh
-1. [`basics.sh`](./basics.sh) sets `wsl.conf`, `.vimrc`, and `.gitconfig`...
-    1. ...except for `user.name` and `user.email` (`git config --global`)
+1. [`basics.sh`](./basics.sh) sets `wsl.conf`, `.vimrc`, `.gitconfig`\*, `.oh-my-zsh/custom`, and `.zshrc`
+    1. \*except for `user.name` and `user.email` (`git config --global`)
 1. [`tools.sh`](./tools.sh) gets you `az`, `kubectl`, `git`, & `terraform`
 1. [`unpack.sh`](../terminal/unpack.sh) to load in all backed-up terminal/etc config files
 1. Don't forget to set up desktop shortcut for terminal (`Win+R` and `shell:AppsFolder` to get to app)
