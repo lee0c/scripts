@@ -32,7 +32,8 @@ echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https:/
 sudo add-apt-repository ppa:git-core/ppa
 
 # HashiCorp
-sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $RELEASE main"
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $RELEASE main" | \
+    sudo tee /etc/apt/sources.list.d/hashicorp.list
 
 # Update and install, then upgrade
 sudo apt update
