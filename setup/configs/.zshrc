@@ -134,8 +134,7 @@ alias gtree="git log --graph --oneline --all"
 alias code="code ."
 alias kdump="kubectl get all --all-namespaces"
 alias sscat="cat $HOME/.ssh/id_rsa.pub"
-
-# directory aliases
+alias tf="terraform $@"
 
 # when sourced, clear term & reset prompt newline
 clear
