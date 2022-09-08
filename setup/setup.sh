@@ -3,15 +3,8 @@
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install -y \
-    ca-certificates \
-    apt-transport-https \
-    lsb-release \
-    gnupg1
-# ^ Kubectl install steps list gnupg2, but that creates errors
-# https://stackoverflow.com/questions/46673717/gpg-cant-connect-to-the-agent-ipc-connect-call-failed
-
 # Microsoft signing key
+# https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-linux
 curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
     gpg --dearmor | \
     sudo tee /etc/apt/trusted.gpg.d/microsoft.asc.gpg > /dev/null
