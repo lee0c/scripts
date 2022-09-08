@@ -5,7 +5,6 @@ sudo apt upgrade -y
 
 sudo apt install -y \
     ca-certificates \
-    curl \
     apt-transport-https \
     lsb-release \
     gnupg1
