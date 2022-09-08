@@ -12,3 +12,9 @@ do
         cp $HOME/scripts/setup/configs/$file $HOME
     fi
 done
+
+# Add any missing oh-my-zsh custom files
+rsync -a $HOME/scripts/setup/configs/oh-my-zsh/custom/ \
+    $HOME/.oh-my-zsh/custom/
+
+cp $HOME/scripts/setup/configs/.zshrc $HOME
