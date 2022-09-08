@@ -15,7 +15,6 @@
 	1. Horizon Theme
 	1. Remote - WSL
 1. [Teams](https://teams.microsoft.com/downloads) -- get "for work or school"
-1. [Powerline fonts](https://github.com/powerline/fonts)
 1. [Office](portal.office.com)
 
 ## Within the terminal 
