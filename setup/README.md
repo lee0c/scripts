@@ -9,6 +9,7 @@
 	1. invisible desktop items
 	1. uninstall bloatware
 	1. mute system and terminal sounds in volume mixer
+    1. stop edge tabs from appearing in alt tab display (Settings \> System \> Multitasking)
 1. [WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
 1. [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 1. [VSCode](https://code.visualstudio.com/Download)
