@@ -8,5 +8,7 @@ fi
 
 for file in .gitconfig .vimrc
 do
-	cp $HOME/scripts/setup/configs/$file $HOME
+    if [[ ! -f $HOME/$file ]]; then
+        cp $HOME/scripts/setup/configs/$file $HOME
+    fi
 done
