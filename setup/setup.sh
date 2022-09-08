@@ -12,7 +12,6 @@ curl -sL https://packages.microsoft.com/keys/microsoft.asc | \
 # Kubernetes signing key
 # https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/
 sudo curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg
-echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
 
 # HashiCorp signing key
 curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo apt-key add -
@@ -26,7 +25,8 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $RELEASE 
     sudo tee /etc/apt/sources.list.d/azure-cli.list
 
 # Kubectl
-echo "deb https://apt.kubernetes.io/ kubernetes-$RELEASE main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+echo "deb [signed-by=/usr/share/keyrings/kubernetes-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main" | \
+    sudo tee -a /etc/apt/sources.list.d/kubernetes.list
 
 # Git
 sudo add-apt-repository ppa:git-core/ppa
