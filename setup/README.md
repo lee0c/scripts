@@ -8,7 +8,7 @@
 	1. remove desktop shortcuts
 	1. invisible desktop items
 	1. uninstall bloatware
-	1. mute system sounds in volume mixer
+	1. mute system and terminal sounds in volume mixer
 1. [WSL](https://docs.microsoft.com/en-us/windows/wsl/install)
 1. [Docker Desktop for Windows](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 1. [VSCode](https://code.visualstudio.com/Download)
@@ -16,6 +16,7 @@
 	1. Remote - WSL
 1. [Teams](https://teams.microsoft.com/downloads) -- get "for work or school"
 1. [Office](portal.office.com)
+1. [Cascadia Code PL](https://github.com/microsoft/cascadia-code/releases)
 
 ## Within the terminal 
 
