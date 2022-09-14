@@ -18,6 +18,7 @@
 1. [Teams](https://teams.microsoft.com/downloads) -- get "for work or school"
 1. [Office](portal.office.com)
 1. [Cascadia Code PL](https://github.com/microsoft/cascadia-code/releases)
+1. [reMarkable](https://my.remarkable.com/device/desktop)
 
 ## Within the terminal 
 
