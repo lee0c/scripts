@@ -33,6 +33,8 @@
 
 ### User profile management
 
+May not be needed - helps to get some file paths right in configs
+
 If the user profile is not `lecattar`: in administrator cmd prompt
 
 ```cmd
