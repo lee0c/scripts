@@ -19,6 +19,7 @@
 1. [Office](portal.office.com)
 1. [Cascadia Code PL](https://github.com/microsoft/cascadia-code/releases)
 1. [reMarkable](https://my.remarkable.com/device/desktop)
+1. [Evoluent Mouse Manager](https://evoluent.com/support/download) for Vertical Mouse 4
 
 ## Within the terminal 
 
