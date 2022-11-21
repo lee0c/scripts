@@ -26,9 +26,7 @@ else
     readarray -t updates <<< "No update information available"
 fi
 
-# Get last project directory
-# lwd=$(basename $(cat $HOME/.lastdir))
-
+# Begin design
 printf "%-b" "${o}O${n}"
 printf "\n"
 
@@ -41,12 +39,12 @@ printf "%-b" " ${o}#\\\\${or}@\\\\${re}*@aq.${n}"
 printf "\n"
 
 printf "%-b" " ${o}\\\\#${ye}\\\\@&${or}V@@${re}*@,.${n}"
-printf "%18s" ""
+printf "%17s" ""
 printf "${updates[0]}"
 printf "\n"
 
 printf "%-b" "  ${o}#\\\\${gr}@&@${ye}*&@@${or}*\\\\${re}*&\\\\oo,,.${n}"
-printf "%10s" ""
+printf "%9s" ""
 printf "${updates[1]}"
 printf "\n"
 
@@ -55,12 +53,13 @@ printf "%10s" ""
 printf "\n"
 
 printf "%-b" "   ${o}#\\\\${pu}@,${bl}\\\\&@@&,${gr}*@@\\\\&ogg,${ye}*&\\\\.${n}"
-printf "%5s" ""
-# printf "Last project directory: %s" $lwd
+printf "%8s" ""
+printf "settings: ctrl+,"
 printf "\n"
 
 printf "%-b" "   ${o}\\\\#${n}  ${pu}*\\\\&@gg,${bl}\\\\@@%&og\\\\,${gr}*@@%${n}"
-printf "%10s" ""
+printf "%7s" ""
+printf "quake mode: win+\`"
 printf "\n"
 
 printf "%-b" "    ${o}#\\\\${n}     ${pu}***^^^^\\\\@g,${bl}@@@@${pu},g${n}"
