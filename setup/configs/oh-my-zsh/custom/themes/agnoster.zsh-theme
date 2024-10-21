@@ -89,8 +89,9 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)%n@%m"
+    message="%(!.%{%F{yellow}%}.)%n@%m"
   fi
+  prompt_segment 171 black "$message"
 }
 
 # Git: branch/detached head, dirty status
@@ -111,9 +112,9 @@ prompt_git() {
     dirty=$(parse_git_dirty)
     ref=$(git symbolic-ref HEAD 2> /dev/null) || ref="➦ $(git rev-parse --short HEAD 2> /dev/null)"
     if [[ -n $dirty ]]; then
-      prompt_segment red black
+      prompt_segment 220 black
     else
-      prompt_segment green $CURRENT_FG
+      prompt_segment 227 black
     fi
 
     if [[ -e "${repo_path}/BISECT_LOG" ]]; then
@@ -136,6 +137,8 @@ prompt_git() {
     zstyle ':vcs_info:*' actionformats ' %u%c'
     vcs_info
     echo -n "${ref/refs\/heads\//$PL_BRANCH_CHAR }${vcs_info_msg_0_%% }${mode}"
+  else
+    prompt_segment 221 default
   fi
 }
 
@@ -198,7 +201,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment 105 $CURRENT_FG '%~'
+  prompt_segment white black '%~'
 }
 
 # Virtualenv: current working virtualenv
@@ -207,6 +210,15 @@ prompt_virtualenv() {
   if [[ -n $virtualenv_path && -n $VIRTUAL_ENV_DISABLE_PROMPT ]]; then
     prompt_segment blue black "(`basename $virtualenv_path`)"
   fi
+}
+
+# nonbinary flag
+# black purple white yellow
+prompt_nonbinary() {
+  prompt_segment black 171
+  prompt_segment 171 white
+  prompt_segment white 228
+  prompt_segment 228 default
 }
 
 # Status:
@@ -220,15 +232,8 @@ prompt_status() {
   [[ $UID -eq 0 ]] && symbols+="%{%F{yellow}%}⚡"
   [[ $(jobs -l | wc -l) -gt 0 ]] && symbols+="%{%F{cyan}%}⚙"
 
-  [[ -n "$symbols" ]] && prompt_segment black default "$symbols"
+  prompt_segment black default "$symbols"
 }
-
-#Kube-ps1
-prompt_kube() {
-  [[ "$KUBE_PS1_ENABLED" = "false" ]] && return
-  prompt_segment blue default "$(kube_ps1)"
-}
-
 
 ## Main prompt
 build_prompt() {
@@ -240,7 +245,6 @@ build_prompt() {
   prompt_git
   prompt_bzr
   prompt_hg
-  prompt_kube
   prompt_end
 }
 
