@@ -1,1 +1,0 @@
-/home/lecattar/tooling/kubectx/completion/kubectx.zsh
