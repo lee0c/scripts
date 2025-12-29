@@ -14,7 +14,7 @@ o="\e[37m"
 # [ -r /etc/lsb-release ] && . /etc/lsb-release
 
 # if [ -z "$DISTRIB_DESCRIPTION" ] && [ -x /usr/bin/lsb_release ]; then
-        # Fall back to using the very slow lsb_release utility
+       # Fall back to using the very slow lsb_release utility
 #        DISTRIB_DESCRIPTION=$(lsb_release -s -d)
 # fi
 
@@ -23,38 +23,39 @@ printf "%-b" "${o}O${n}"
 printf "\n"
 
 printf "%-b" "${o}\\\\#${re}\\\\&q${n}"
-printf "%14s" ""
-printf "settings:"
+# printf "%14s" ""
 # printf "Welcome to %s (%s %s %s)" "$DISTRIB_DESCRIPTION" "$(uname -o)" "$(uname -r)" "$(uname -m)"
 printf "\n"
 
 printf "%-b" " ${o}#\\\\${or}@\\\\${re}*@aq.${n}"
-printf "%12s" ""
-printf "ctrl+,"
+printf "%7s" " "
+printf "don't forget to track your time!"
 printf "\n"
 
 printf "%-b" " ${o}\\\\#${ye}\\\\@&${or}V@@${re}*@,.${n}"
-printf "%15s" " "
-printf "split right : alt+shift+plus"
 printf "\n"
 
 printf "%-b" "  ${o}#\\\\${gr}@&@${ye}*&@@${or}*\\\\${re}*&\\\\oo,,.${n}"
-printf "%8s" " "
-printf "split down : alt+shift+minus"
 printf "\n"
 
 printf "%-b" "  ${o}\\\\#${bl}\\\\@&${gr}@@&@@,${ye}*\\\\&og,${or}*&\\\\.${n}"
-printf "%8s" " "
-printf "settings : ctrl+comma"
+printf "%5s" " "
+printf "COMMANDS:"
 printf "\n"
 
 printf "%-b" "   ${o}#\\\\${pu}@,${bl}\\\\&@@&,${gr}*@@\\\\&ogg,${ye}*&\\\\.${n}"
+printf "%4s" " "
+printf "split right : alt+shift+plus"
 printf "\n"
 
 printf "%-b" "   ${o}\\\\#${n}  ${pu}*\\\\&@gg,${bl}\\\\@@%&og\\\\,${gr}*@@%${n}"
+printf "%4s" " "
+printf "split down : alt+shift+minus"
 printf "\n"
 
 printf "%-b" "    ${o}#\\\\${n}     ${pu}***^^^^\\\\@g,${bl}@@@@${pu},g${n}"
+printf "%5s" " "
+printf "settings : ctrl+comma"
 printf "\n"
 
 printf "%-b" "    ${o}\\\\#${n}                     ${pu}*${n}"
