@@ -18,14 +18,6 @@ o="\e[37m"
 #        DISTRIB_DESCRIPTION=$(lsb_release -s -d)
 # fi
 
-# Update information
-# if [[ $(/usr/lib/update-notifier/apt-check --human-readable 2> /dev/null) ]]
-# then
-#    readarray -t updates <<< $(/usr/lib/update-notifier/apt-check --human-readable)
-# else
-#    readarray -t updates <<< "No update information available"
-# fi
-
 # Begin design
 printf "%-b" "${o}O${n}"
 printf "\n"
@@ -42,31 +34,31 @@ printf "ctrl+,"
 printf "\n"
 
 printf "%-b" " ${o}\\\\#${ye}\\\\@&${or}V@@${re}*@,.${n}"
-# printf "${updates[0]}"
+printf "%15s" " "
+printf "split right : alt+shift+plus"
 printf "\n"
 
 printf "%-b" "  ${o}#\\\\${gr}@&@${ye}*&@@${or}*\\\\${re}*&\\\\oo,,.${n}"
-# printf "%9s" ""
-# printf "${updates[1]}"
+printf "%8s" " "
+printf "split down : alt+shift+minus"
 printf "\n"
 
 printf "%-b" "  ${o}\\\\#${bl}\\\\@&${gr}@@&@@,${ye}*\\\\&og,${or}*&\\\\.${n}"
-printf "%10s" ""
+printf "%8s" " "
+printf "settings : ctrl+comma"
 printf "\n"
 
 printf "%-b" "   ${o}#\\\\${pu}@,${bl}\\\\&@@&,${gr}*@@\\\\&ogg,${ye}*&\\\\.${n}"
-# printf "%8s" ""
 printf "\n"
 
 printf "%-b" "   ${o}\\\\#${n}  ${pu}*\\\\&@gg,${bl}\\\\@@%&og\\\\,${gr}*@@%${n}"
-# printf "%7s" ""
-# printf "quake mode: win+\`"
 printf "\n"
 
 printf "%-b" "    ${o}#\\\\${n}     ${pu}***^^^^\\\\@g,${bl}@@@@${pu},g${n}"
-printf "%10s" ""
 printf "\n"
 
 printf "%-b" "    ${o}\\\\#${n}                     ${pu}*${n}"
-printf "%10s" ""
+printf "\n"
+
+printf "%-b" "     ${o}#\\\\${n}"
 printf "\n"
